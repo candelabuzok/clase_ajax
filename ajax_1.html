@@ -6,6 +6,9 @@
 	<title></title>
 </head>
 <body>
+	<ul>
+		
+	</ul>
 	<script>
 		
 		//1) crear una conexión (objeto XHR)
@@ -23,7 +26,11 @@
 		//4) gestionar la respuesta
 
 		conexion.addEventListener("load", function(){
-			console.log(this.responseText)
+			this.responseText.split(",").forEach(palabra => {
+				let li = document.createElement("li");
+				li.innerHTML = palabra;
+				lista.appendChild(li);
+			});
 		});
 
 	</script>
