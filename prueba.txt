@@ -1,1 +1,1 @@
-....loquesea
+palabras,separadas,por,comas
